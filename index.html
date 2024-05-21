@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大村埤腳五通宮</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -14,41 +15,80 @@
     </div>
 </nav>
 <div class="p-4 md:p-8 lg:p-12 lg:ml-24 lg:mr-24">
-    <img src="img/map.jpg" alt="Background Image" class="rounded-3xl shadow-md" style="width: 100%; height: auto;" >
+    <img src="img/map.jpg" alt="Background Image" class="rounded-3xl shadow-md" style="width: 100%; height: auto;">
 </div>
 <h1 class="text-center text-3xl lg:text-5xl">AR展示</h1>
 <div class="relative overflow-auto p-4 md:p-8 lg:p-12 lg:ml-24 lg:mr-24">
-    <div class="grid grid-flow-col auto-cols-auto gap-4">
-        <div class="block max-w-fit p-6 bg-white border border-gray-200 rounded-lg shadow-md
+    <div class="grid grid-flow-col auto-cols-auto gap-4 md:gap-8 lg:gap-12">
+        <div class="block max-w-fit p-12 bg-white border border-gray-200 rounded-lg shadow-md
         hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <img class="rounded-lg mb-4 content-start" src="img/stove.jpg" alt="天宮爐"/>
-            <h3 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">天宮爐</h3>
+            <h3 class="text-center mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">天宮爐</h3>
             <p class="font-normal text-gray-700 dark:text-gray-400"></p>
-            <a href="https://playcanv.as/p/uNw8VXev/" class="inline-flex font-medium items-center text-blue-600 hover:underline">
-                前往連結
-                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                     fill="none" viewBox="0 0 18 18">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
-                </svg>
-            </a>
+<!--            <a href="https://playcanv.as/p/uNw8VXev/"-->
+<!--               class="inline-flex font-medium items-center text-blue-600 hover:underline">-->
+<!--                前往連結-->
+<!--                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"-->
+<!--                     fill="none" viewBox="0 0 18 18">-->
+<!--                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                          d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>-->
+<!--                </svg>-->
+<!--            </a>-->
+
+            <button data-popover-target="popover-default" type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                AR檢視
+            </button>
+
+            <div data-popover id="popover-default" role="tooltip"
+                 class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Popover title</h3>
+                </div>
+                <div class="px-3 py-2">
+                    <p>And here's some amazing content. It's very engaging. Right?</p>
+                </div>
+                <iframe src='https://creator.plugxr.com/embed/3AKIUH3IPXWSMI9D' class="w-fit rounded-b-lg " height="400"
+                        allow='camera https://creator.plugxr.com; microphone https://creator.plugxr.com;        accelerometer https://creator.plugxr.com;magnetometer https://creator.plugxr.com;gyroscope https://creator.plugxr.com;'></iframe>
+            </div>
         </div>
-        <div class="block max-w-fit p-6 bg-white border border-gray-200 rounded-lg shadow-md
+        <div class="block max-w-fit p-12 bg-white border border-gray-200 rounded-lg shadow-md
         hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <img class="rounded-lg mb-4 content-start" src="img/pillar.jpg" alt="龍柱"/>
-            <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">龍柱</h5>
+            <img class="rounded-lg mb-4 content-start" src="img/pillar.jpg" alt="天宮爐"/>
+            <h3 class="text-center mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">龍柱</h3>
             <p class="font-normal text-gray-700 dark:text-gray-400"></p>
-            <a href="https://playcanv.as/p/uNw8VXev/" class="inline-flex font-medium items-center text-blue-600 hover:underline">
-                前往連結
-                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                     fill="none" viewBox="0 0 18 18">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
-                </svg>
-            </a>
+            <!--            <a href="https://playcanv.as/p/uNw8VXev/"-->
+            <!--               class="inline-flex font-medium items-center text-blue-600 hover:underline">-->
+            <!--                前往連結-->
+            <!--                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"-->
+            <!--                     fill="none" viewBox="0 0 18 18">-->
+            <!--                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+            <!--                          d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>-->
+            <!--                </svg>-->
+            <!--            </a>-->
+
+            <button data-popover-target="popover" type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                AR檢視
+            </button>
+
+            <div data-popover id="popover" role="tooltip"
+                 class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Popover title</h3>
+                </div>
+                <div class="px-3 py-2">
+                    <p>And here's some amazing content. It's very engaging. Right?</p>
+                </div>
+                <iframe src='https://creator.plugxr.com/embed/3AKIUH3IPXWSMI9D' class="w-fit rounded-b-lg " height="400"
+                        allow='camera https://creator.plugxr.com; microphone https://creator.plugxr.com;        accelerometer https://creator.plugxr.com;magnetometer https://creator.plugxr.com;gyroscope https://creator.plugxr.com;'></iframe>
+            </div>
+
         </div>
     </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>
